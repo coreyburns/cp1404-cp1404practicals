@@ -16,7 +16,7 @@ while choice != "Q":
         print("Result: {:.2f} F".format(fahrenheit))
     elif choice == "F":
         fahrenheit = float(input("Fahrenheit : "))
-        celsius = 5/9-32
+        celsius = (fahrenheit - 32) / 1.8
         print("Result: {:.2f} C".format(celsius))
     else:
         print("Invalid option")
