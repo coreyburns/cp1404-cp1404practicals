@@ -1,0 +1,18 @@
+"""
+Cp1404 practical
+shop calculator for total and discount
+"""
+sales = 0  # amount of sales
+number_of_items = int(input('Number of items?:')) # how many sales
+while number_of_items < 0:
+    number_of_items = int(input("must be a positive number. Number of positive items?: ")) # no negative numbers
+for i in range(number_of_items):
+    price = float(input("price of item: "))
+    sales += price
+if sales > 100:
+    sales = sales * 0.9
+
+# print("The total price for  ", number_of_items, " items is $",sales)
+# with string formatting for currency output
+print("Total price for {} items is ${:.2f}".format(number_of_items, sales))
+# string formatting looks far better
