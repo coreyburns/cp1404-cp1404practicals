@@ -17,6 +17,7 @@ print
 print(" ELECTRICITY BILL ESTIMATOR")
 MENU = """TARIFF_11 = 0.244618
 TARIFF_31 = 0.136928"""
+print (MENU)
 tariff_11 = 0.244618
 tariff_31 = 0.136928
 cents_per_hour = float(input(" Please Enter Tariff Number- 11 or 31 : "))
